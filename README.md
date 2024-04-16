@@ -12,11 +12,18 @@ Below are the steps to Deploy the project
 
 Softwares Required for the project are :
 1.Python: 3.12.1
+
 2.Tensorflow: 2.16.1
+
 3.Keras: 3.0.5
+
 4.BeautifulSoup: 4.12.3
+
 5.Splash: 3.5.0
+
 6.Docker: 24.0.7
+
 7.Django: 5.0.2
+
 8.Numpy: 1.26.4
 
