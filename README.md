@@ -1,7 +1,7 @@
 # ProductReviewAnalyzerChromeExtension
 
 Below are the steps to Deploy the project 
-1. Train the sentiment analysis model and save it (`sentiment_analysis_newonelstm100.keras`).
+1. Train the sentiment analysis model and save it (`sentiment_analysis_newonelstm100.keras`) and the accuracy of the model is 86%
 2. Create or load the tokenizer and save it (`tokenizerlstm100.pickle`).
 3. Uploading dataset (`data.csv`) for training.
 4. Start Django server to handle requests from chrome extension which acts like API. (`python manage.py runserver`).
@@ -11,6 +11,7 @@ Below are the steps to Deploy the project
 8. Display’s sentiment analysis results in the Chrome extension, including the graph.
 
 Softwares Required for the project are :
+
 1.Python: 3.12.1
 
 2.Tensorflow: 2.16.1
@@ -27,3 +28,10 @@ Softwares Required for the project are :
 
 8.Numpy: 1.26.4
 
+Output of the above project :
+
+![Screenshot 2024-04-10 203901](https://github.com/h4rik/ProductReviewAnalyzerChromeExtension/assets/108120747/975c71a2-d984-43b2-a946-9be35be5102c)
+
+
+![Screenshot 2024-03-30 115249](https://github.com/h4rik/ProductReviewAnalyzerChromeExtension/assets/108120747/19ce0acf-8b73-49ab-b8df-31fb6b533e3c)
+![Screenshot 2024-03-30 120508](https://github.com/h4rik/ProductReviewAnalyzerChromeExtension/assets/108120747/ec3e0dce-3b10-4ead-b0db-a0b048b5005b)
