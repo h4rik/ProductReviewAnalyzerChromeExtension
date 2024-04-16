@@ -1,0 +1,48 @@
+{
+    "manifest_version": 3,
+    "name": "ReviewAssist - Amazon Produt Review Analyzer",
+    "version": "1.0",
+    "description": "Analyzing reviews and price alert",
+    "permissions": [
+        "tabs",
+        "activeTab",
+        "storage",
+        "webNavigation",
+        "notifications",
+        "identity",
+        "webRequest",
+        "contextMenus"
+    ],
+    "host_permissions": ["https://*.amazon.in/*"],
+    "externally_connectable": {
+        "matches": ["*://www.amazon.in/*/dp/*"]
+    },
+    "background": {
+        "service_worker": "background.js"
+    },
+    "content_scripts": [
+        {
+            "matches": ["*://www.amazon.in/*/dp/*"],
+            "js": ["contentScript.js"]
+        }
+    ],
+    "action": {
+        "default_icon": {
+            "16": "assets/ReviewAssist-icon.png",
+            "24": "assets/ReviewAssist-icon.png",
+            "36": "assets/ReviewAssist-icon.png"
+        },
+        "default_title": "ReviewAssist - Amazon Produt Review Analyzer",
+        "default_popup": "popup.html"
+    },
+    
+    "content_security_policy": {
+        "extension_pages": "script-src 'self'; object-src 'self'",
+        "sandbox": "sandbox allow-scripts",
+        "script-src": ["'self'", "'wasm-unsafe-eval'", "'inline-speculation-rules'", "http://localhost:*", "http://127.0.0.1:*", "https://cdn.jsdelivr.net", "https://fonts.googleapis.com"],
+        "object-src": ["'self'"]
+    }
+    
+    
+}
+
