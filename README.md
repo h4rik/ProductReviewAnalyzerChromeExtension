@@ -1,5 +1,7 @@
 # ProductReviewAnalyzerChromeExtension
 
+This project develops a Chrome extension aimed at providing immediate sentiment analysis of product reviews on Amazon. By using web scraping techniques with Beautiful Soup and rendering dynamic content through Splash within a Docker environment, the extension captures and processes reviews directly from product pages. These reviews are then analyzed using a deep learning model, specifically an LSTM network, to assess the sentiment as positive or negative. The analysis results, expressed as percentages of positive and negative sentiments, are seamlessly displayed to users through a popup on their Chrome browser. 
+
 Below are the steps to Deploy the project 
 1. Train the sentiment analysis model and save it (`sentiment_analysis_newonelstm100.keras`) and the accuracy of the model is 86%
 2. Create or load the tokenizer and save it (`tokenizerlstm100.pickle`).
