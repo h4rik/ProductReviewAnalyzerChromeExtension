@@ -1,0 +1,22 @@
+version: '3.9'
+
+services:
+  backend:
+    build:
+      context: ./backend Server(Django)/extension
+    container_name: django-backend
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend Server(Django)/extension:/app
+    command: python manage.py runserver 0.0.0.0:8000
+    depends_on:
+      - splash
+    restart: always
+
+  splash:
+    image: scrapinghub/splash
+    container_name: splash-service
+    ports:
+      - "8050:8050"
+    restart: always
