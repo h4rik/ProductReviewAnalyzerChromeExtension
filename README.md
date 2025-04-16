@@ -31,9 +31,18 @@ Softwares Required for the project are :
 8.Numpy: 1.26.4
 
 Output of the above project :
-
 ![Screenshot 2024-04-10 203901](https://github.com/h4rik/ProductReviewAnalyzerChromeExtension/assets/108120747/975c71a2-d984-43b2-a946-9be35be5102c)
-
-
 ![Screenshot 2024-03-30 115249](https://github.com/h4rik/ProductReviewAnalyzerChromeExtension/assets/108120747/19ce0acf-8b73-49ab-b8df-31fb6b533e3c)
 ![Screenshot 2024-03-30 120508](https://github.com/h4rik/ProductReviewAnalyzerChromeExtension/assets/108120747/ec3e0dce-3b10-4ead-b0db-a0b048b5005b)
+
+Working with Django server:
+![Picture 3](https://github.com/user-attachments/assets/093e56b5-91e4-430d-b35f-2d576968d0e6)
+
+Extracting all the comments in the background:
+![Picture1](https://github.com/user-attachments/assets/eb0a205b-f2b0-405a-850d-2594f137d38a)
+
+Performing Sentiment Analysis:
+![Picture2](https://github.com/user-attachments/assets/209a62e6-066a-46d3-bcc1-1a41eb4f1738)
+
+Sequence diagram of the project:
+![Sequence diagram](https://github.com/user-attachments/assets/da89317d-1de6-4802-ab1d-5b57811e9e7e)
